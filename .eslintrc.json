@@ -27,6 +27,7 @@
                 ".tsx"
             ]
         }],
+        "react/require-default-props": 0,
         "import/no-unresolved": 0,
         "import/extensions": 0
     }

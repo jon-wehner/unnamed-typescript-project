@@ -1,9 +1,17 @@
 import * as React from 'react';
 import './App.css';
 
-function App() {
+interface AppProps {
+  headerText: string,
+  extraText?: string,
+}
+
+function App({ headerText, extraText }: AppProps) {
   return (
-    <h1>Header</h1>
+    <>
+      <h1>{headerText}</h1>
+      {extraText && <p>{extraText}</p>}
+    </>
   );
 }
 
