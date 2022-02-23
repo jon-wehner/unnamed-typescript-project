@@ -1,22 +1,10 @@
 import React, { useState } from 'react';
+import { User } from './interfaces';
 import './App.css';
 
 interface AppProps {
   headerText: string,
   extraText?: string,
-}
-
-interface address {
-  street: string,
-  number: number,
-  zip:string,
-}
-interface User {
-  name: string,
-  age: number,
-  country: string,
-  address: address,
-  admin: boolean
 }
 
 function App({ headerText, extraText }: AppProps) {
